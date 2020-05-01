@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <script>
+        function sayHi() {  // (1) create
+            alert ("Hello");
+        }
+
+        let func = sayHi;  // (2)copy
+
+        func();  //hello   // (3) run the copy
+        sayHi(); //hello   // this still works too!
+    </script>
+
+</body>
+</html>
