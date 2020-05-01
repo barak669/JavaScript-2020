@@ -9,12 +9,14 @@
             name = String(name);
             if ( (name==null) || (name==" ") || (name.length<=2) )
             {
-                alert("Worng");
+                alert("Worng name!!!");
                 return false;
             }
+            return true;
 
         }
-        validateName(" ");
+        name = prompt("Enter your Name?");
+        validateName(name);
 
     </script>
      
