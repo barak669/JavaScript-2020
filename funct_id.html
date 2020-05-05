@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <div id="test"> The result will be here:</div>
+<script>
+var zeoute =prompt("Please enter your zeoute: ");
+function Check(zeoute){ //function to check the id
+  while(zeoute.length<9){ // if less than 9 numbers add 0
+    if (zeoute.length<6){
+      return "invalid id";
+      break
+    }
+    zeoute= '0'+zeoute;
+
+}
+  for (var i=0;i<zeoute.length;i++ ){ //here we check that each charactere is an int
+    if(parseInt(zeoute[i]) === parseInt(zeoute[i],10)){
+      flag=true;
+
+  }
+    else{
+      flag=false;
+      break;
+  }
+}
+ if(flag){
+   return zeoute;
+ }
+ else{
+   return "invalid id";
+ }
+}
+var result = Check(zeoute);
+document.getElementById("test").innerHTML=Check(result);
+</script>
+
+</body>
+</html>
