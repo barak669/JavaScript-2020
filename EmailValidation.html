@@ -8,6 +8,9 @@
         var stringY;
         stringY = "";
         var notValid = '(),:;<>[\\]';
+        var email;
+        email = String(email);
+        email = prompt("what is your email?", "example@domain.com");
         var email = 'nad(ia@gmail.com';
         //alert(notValid[2]);
 
@@ -16,7 +19,7 @@
             //alert(notValid[i]);
             if (email.indexOf(notValid[i])>-1)
             {
-                alert("not valid!!!")
+                alert(notValid[i] + "    " +  "in email is not valid!!!")
             }
             
         }
