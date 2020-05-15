@@ -1,0 +1,38 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+       /*
+        and = &&
+        or  = || 
+        not = !
+       */
+
+       var flag1 = true, flag2 = false;
+
+       // and:
+       console.log("flag1 && flag2 = ", flag1 && flag2); // flag1 && flag2 =  false
+       console.log("flag2 && flag1 = ", flag2 && flag1); // flag2 && flag1 =  false
+       console.log(true && true); // always true
+
+       // or:
+       console.log("flag1 || flag2 = ", flag1 || flag2); // flag1 || flag2 =  true
+       console.log("flag2 || flag1 = ", flag2 || flag1); // flag2 || flag1 =  true
+
+        // not:
+        console.log("!flag1 = ", !flag1); // !flag1 =  false
+        console.log("!flag2 = ", !flag2); // !flag2 =  true
+        console.log(!5)                   // false
+
+    </script>
+
+</body>
+</html>

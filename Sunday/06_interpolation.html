@@ -1,18 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        var num1 = 3, num2 = 2;
+      // interpolation - שרבוב
 
-        var str1 = "num1 is: " + num1 + ",num2 is: " + num2;
+      var num1 = 3, num2 = 2;
 
-        var str3 = `num1 is ${num1}, num2 is: ${num2}`;
-        console.log("str3", str3);
+      var str1 = "num1 is: " + num1 + ", num2 is: " + num2;
+      var str2 = 'num1 is: ' + num1 + ', num2 is: ' + num2;
+      // use backticks (above tab) ``
+      var str3 = `num1 is: ${num1}, num2 is: ${num2}`;
+
+      console.log("str1: ", str1);
+      console.log('str2: ', str2);
+      console.log(`str3: ${str3}`);
+
+    /*
+    str1:  num1 is: 3, num2 is: 2
+    str2:  num1 is: 3, num2 is: 2
+    str3:  num1 is: 3, num2 is: 2
+    */
+
+
+    str1 = "1 + 1 = " + (1+1);  
+    str2 = '1 + 1 = ' + (1+1);
+    str3 = `1 + 1 = ${1 + 1}`;  
+
+    console.log("str1: ", str1); // str1:  1 + 1 = 2
+    console.log('str2: ', str2); // str2:  1 + 1 = 2
+    console.log(`str3: ${str3}`); // str3:  1 + 1 = 2
+
     </script>
-</body>
+  </body>
 </html>

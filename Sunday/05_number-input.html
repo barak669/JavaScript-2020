@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
     <script>
-        // input from user by 'prompt()' always comes as string
-        var num1 = prompt('enter number');
-        console.log(num1, typeof num1);
+      // Input from user by 'Prompt()' always comes as string
+      // We need to explicitly (מפורשות) convert it to Number() if it is a number.
+      var num1 = prompt("Enter first number: ");
+      var num2 = prompt("Enter second number: ");
 
-        num1 = Number(num1);
-        console.log(num1, typeof num1);
+      console.log(num1, typeof num1); // 4 string
+      console.log(num2, typeof num2); // 6 string
+      console.log("num1 + num2 = ", num1 + num2); // 46
+
+      num1 = Number(num1);
+      num2 = Number(num2);
+
+      console.log(num1, typeof num1); // 4 "number"
+      console.log(num2, typeof num2); // 6 "number"
+      console.log("num1 + num2 = ", num1 + num2); // 10
+
     </script>
-</body>
+  </body>
 </html>
