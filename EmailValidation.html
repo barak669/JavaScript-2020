@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <script>
+        var i;
+        var stringY;
+        stringY = "";
+        var notValid = '(),:;<>[\\]';
+        var email = 'nad(ia@gmail.com';
+        //alert(notValid[2]);
+
+        for (i=0; i<notValid.length; i++)
+        {
+            //alert(notValid[i]);
+            if (email.indexOf(notValid[i])>-1)
+            {
+                alert("not valid!!!")
+            }
+            
+        }
+        
+    </script>
+</body>
+</html>
