@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <script>
+        // matrix - מערך דו ממדי
+        var matrix = [
+            ["a","b","c"],
+            ["d","e","f"]
+        ];
+
+        // will give us the number of rows in the matrix:
+        console.log(matrix.length); // 2
+
+        // will giv us the number of:
+        console.log(matrix[0].length); // 3
+        
+        console.log(matrix[1][1]); // e
+
+        console.table(matrix);
+
+        // add row to matrix:
+        matrix[2] = ["X","Y","Z"];
+
+        console.table(matrix);
+    </script>
+</body>
+</html>

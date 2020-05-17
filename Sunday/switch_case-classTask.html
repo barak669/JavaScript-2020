@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <script>
+        var grade = Number(prompt("Enter your grade:"));
+
+        // Math.floor() - Returns the greatest integer less or equal to its numeric 
+        // example: 73 -> 70
+        // example: 90-> 90
+
+        switch (Math.floor(grade / 10)) 
+        {
+           case 10:
+             alert('Best');
+             break;
+
+           case 9:
+             alert('Very good');
+             break;
+
+           case 8:
+           case 7:
+             alert('Good');
+             break;
+
+           case 6:
+           case 5:
+             alert('OK');
+             break;
+
+           default:
+             alert('Try Again');
+             
+        }    
+    </script>
+    
+</body>
+</html>
