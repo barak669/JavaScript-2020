@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // while:
+      var stopper1 = 0;
+      var counter1 = 0;
+
+      while (counter1 < stopper1) {
+        console.log(`Iteration number: ${counter1}`);
+        counter1++;
+      }
+
+      console.log(`after iteration number: ${counter1}`); // after iteration number: 0
+
+      // do- while:
+      var stopper2 = 0;
+      var counter2 = 0;
+
+      do {
+        console.log(`Iteration number: ${counter2}`);
+        counter2++;
+      } while (counter2 < stopper2);
+
+      console.log(`after iteration number: ${counter2}`);
+
+      /*
+        Iteration number: 0
+        after iteration number: 1
+      */
+    </script>
+  </body>
+</html>
