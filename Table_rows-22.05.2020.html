@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <style>
+        table {
+            border-collapse: collapse;
+        }
         td{
-            border: 1px solid black;
+            border: 1px solid rgb(0, 0, 0);
             padding: 3px 5px;
         }
     </style>
+
 </head>
+
 <body>
-    <table>
+    <table border="2">
+    
         <tr>
             <td>1:1</td>
             <td>2:1</td>
@@ -46,19 +53,21 @@
             <td>5:5</td>
         </tr>
     </table>
+
     <script>
         var table = document.body.firstElementChild;
         var l = table.rows.length;
-        var mid = l/2;
+        //var mid = l/2;
+
         for (var i=0; i<l; i++)
         {
             let row = table.rows[i];
-            row.cells[mid].style.backgroundColor = "red";
+            row.cells[i].setAttribute("bgcolor", "blue");
         }
 
         //var tBody = table.children[0];
         //var tr1 = tBody.children[0];
-        //tr1.children[0].setAttribute("bgcolor", "yellow");
+        //tr1.children[0].style.backgroungColor = "red";
     </script>
     
 </body>
