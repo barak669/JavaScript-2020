@@ -9,8 +9,24 @@
         console.log("----------while-------");
         var counter1 = 0;
         while (counter1 < names.length)
-          console.log('Index: ${counter1}, contains: ${names[counter1]}');
-          counter1++
+          console.log("Index: ${counter1}, contains: ${names[counter1]}");
+          counter1++;
+
+
+        console.log("----------do while-------");
+        var counter2 = 0;
+        do {
+            // names.length == 4
+            while (counter2 < names.length)
+               console.log(' Index: ${counter2}, contains: ${names[counter2]} ');
+               counter2++;
+        } while (counter2 < names.length);
+
+        console.log("----------for-------");
+        for (var counter3 = 0; counter3 < names.length; counter3++) {
+            console.log('Index: ${counter3}, contains: ${names[counter3]} ');
+        }
+        
     </script>
 </body>
 </html>
