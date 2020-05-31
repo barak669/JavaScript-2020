@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <script>
+        //setTimeout(function, milliseconds);
+        setTimeout(function() {
+            console.log(`In setTimeout(), time: ${Date.now()}`);
+        }, 3000)
+
+        console.log(`After setTimeout(), time: ${Date.now()}`);
+
+        /*
+        After setTimeOut(), time: 1590941662949
+        In setTimeOut(), time:    1590941662950
+        */
+    </script>
+</body>
+</html>

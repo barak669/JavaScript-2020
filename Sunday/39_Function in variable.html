@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <script>
+        function f1() {
+            return 3;
+        }
+
+        console.log(f1()); // 3
+        console.log(f1);   // f f1(){return 3; }
+
+        var ras1 = f1();
+        console.log(res1);  // 3
+        console.log(typeof res1);  // number
+
+        var res2 = f1;
+        console.log(res2);  // f f1(){return 3; }
+        console.log(typeof res2);  // function
+        res2();
+
+    </script>
+    
+</body>
+</html>
