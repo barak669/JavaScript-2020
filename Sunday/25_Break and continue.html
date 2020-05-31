@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <script>
+      var maxNum = 5,
+        counter = 0;
+
+      while (counter < maxNum) {
+        counter++;
+
+        if (counter == 1) {
+          // Jumps to the beginning of the loop:
+          continue;
+          // This will never happen:
+          console.log(`Iteration number: ${counter}`);
+        } 
+        else if (counter == 3) {
+          break;
+          // This will never happen:
+          console.log(`Iteration number: ${counter}`);
+        }
+
+        console.log(`Iteration number: ${counter}`);
+      }
+
+      console.log(`After loop: ${counter}`);
+
+      /*
+      Iteration number: 2
+      After loop: 3
+    */
+    </script>
+  </body>
+</html>

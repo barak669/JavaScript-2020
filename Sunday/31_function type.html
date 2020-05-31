@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // -------------- Call functions ----------------
+      f1(); // I am function f1
+
+      var resF2 = f2(); // I am function f2
+      console.log(resF2); // Hello from f2
+
+      f3(12); // I am function f3, and my num: 12
+
+      var adding = f4(5, 6);  // I am function f4, and my num1: 5 my num2: 6
+      console.log(adding);   // 11
+
+      console.log(f2()); // get both the data from the function, and the returned value. 
+
+
+
+      // -------------- Declare functions ----------------
+
+      // function that does not get parameters, and does not return value:
+      function f1() {
+        console.log("I am function f1");
+      }
+
+      // function that does not get parameters, and does return value:
+      function f2() {
+        console.log("I am function f2");
+        return "Hello from f2";
+      }
+
+      // function that does get parameters, and does not return value:
+      function f3(num) {
+        console.log(`I am function f3, and my num: ${num}`);
+      }
+
+      // function that does get parameters, and does return value:
+      function f4(num1, num2) {
+        console.log(`I am function f4, and my num1: ${num1} my num2: ${num2}`);
+        return num1 + num2;
+      }
+    </script>
+  </body>
+</html>

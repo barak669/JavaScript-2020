@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <script>
+      var matrix = [
+        ["a", "b", "c"],
+        ["d", "e", "f"],
+      ];
+
+      // for-of: goes on value:
+      console.log("-------- For - of -------------");
+      for (var row of matrix) {
+        for (var col of row) {
+          console.log(col);
+        }
+      }
+
+      /*
+       -------- For - of -------------
+        a
+        b
+        c
+        d
+        e
+        f
+    */
+    </script>
+  </body>
+</html>

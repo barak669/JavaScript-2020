@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Loop over matrix : while, do-while, for
+
+      var matrix = [
+        ["a", "b", "c"],
+        ["d", "e", "f"],
+      ];
+
+      console.log("--------- while ------------");
+      var row = 0;
+      while (row < matrix.length) {
+        var col = 0;
+        while (col < matrix[row].length) {
+          console.log(`[${row}][${col}] = ${matrix[row][col]}`);
+          col++;
+        }
+        row++;
+      }
+
+      console.log("--------- do - while ------------");
+      row = 0;
+      do {
+        var col = 0;
+        do {
+          console.log(`[${row}][${col}] = ${matrix[row][col]}`);
+          col++;
+        } while (col < matrix[row].length);
+        row++;
+      } while (row < matrix.length);
+
+
+      console.log("--------- for ------------");
+      for (row = 0; row < matrix.length; row++) {
+        for (var col = 0; col < matrix[row].length; col++) {
+          console.log(`[${row}][${col}] = ${matrix[row][col]}`);
+        }
+      }
+      /*
+        --------- while ------------
+        [0][0] = a
+        [0][1] = b
+        [0][2] = c
+        [1][0] = d
+        [1][1] = e
+        [1][2] = f
+        --------- do - while ------------
+        [0][0] = a
+        [0][1] = b
+        [0][2] = c
+        [1][0] = d
+        [1][1] = e
+        [1][2] = f
+        --------- for ------------
+        [0][0] = a
+        [0][1] = b
+        [0][2] = c
+        [1][0] = d
+        [1][1] = e
+        [1][2] = f
+        */
+    </script>
+  </body>
+</html>
