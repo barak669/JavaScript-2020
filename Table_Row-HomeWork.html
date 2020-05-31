@@ -51,6 +51,7 @@
             <td>male</td>
             <td>5:5</td>
         </tr>
+        
     </table>
 
     <script>
@@ -73,13 +74,15 @@
             if (document.getElementsByTagName('tr')[j].children[i].innerHTML == "female")
             {
                 
-                document.getElementsByTagName('tr')[j].children[i+1].innerHTML = "parfume";
-                //document.getElementsByTagName('tr')[j].children[i+1].innerHTML = document.getElementsByTagName('tr')[j].children[i+1].innerHTML + "flower"
+                document.getElementsByTagName('tr')[j].children[i+1].innerHTML = "parfume + flower";
             }
-            
+            else if(document.getElementsByTagName('tr')[j].children[i].innerHTML == "female" && document.getElementsByTagName('tr')[j].children[i-1]=="Employee")
+          {
+              document.getElementsByTagName('tr')[j].children[i+1].innerHTML = "flower";
+          }
             else
             {
-                document.getElementsByTagName('tr')[j].children[i+1].innerHTML = "watch";
+                document.getElementsByTagName('tr')[j].children[i+1].innerHTML = "watch + flower";
             }
         }
     </script>
