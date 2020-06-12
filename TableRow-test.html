@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid rgb(0, 0, 0);
+            padding: 3px 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <script>
+        var password = "12345";
+        var answerPass = prompt("What is your Password?", "");
+        if (answerPass != password)
+        {
+            table.outerHTML = "You are not permitted to see this page";
+        }
+    </script>
+
+    <table>
+    
+        <td name = "LastName">Last Name</td>
+            <td>Age</td>
+            <td>Employee-Contractor</td>
+            <td>Gender</td>
+            <td>Present for Passover</td>
+        </tr>
+        <tr>
+            <td od="c2" name = "LastName">johnson</td>
+            <td>25</td>
+            <td>employee</td>
+            <td>female</td>
+            <td>5:2</td>
+        </tr>
+        <tr>
+            <td name = "LastName">cohen</td>
+            <td>34</td>
+            <td>employee</td>
+            <td>male</td>
+            <td>5:3</td>
+        </tr>
+        <tr>
+            <td>levi</td>
+            <td>40</td>
+            <td>contractor</td>
+            <td>female</td>
+            <td>5:4</td>
+        </tr>
+        <tr>
+            <td>yrovsky</td>
+            <td>27</td>
+            <td>employee</td>
+            <td>male</td>
+            <td>5:5</td>
+        </tr>
+        
+    </table>
+
+    <script>
+       var c
+        var rows = document.querySelectorAll('tr');
+        var colLength = document.querySelector('tr').children.length;
+        for (var i=0; i<colLength; i++)
+        {
+            var colName = document.querySelector('tr').children[i].innerHTML;
+            if (colName == 'Gender')
+            {
+                document.querySelector("tr").children[i].innerHTML = "min";
+                break;
+            }
+        }
+        //alert(i);
+
+        for (var j=1; j<colLength; j++)
+        {
+            if (document.getElementsByTagName('tr')[j].children[i].innerHTML == "female")
+            {
+                document.getElementsByTagName('tr')[j].children[i+1].innerHTML = "parfume + flower";
+            }
+            else if(document.getElementsByTagName('tr')[j].children[i].innerHTML == "female" && document.getElementsByTagName('tr')[j].children[i-1]=="Employee")
+           {
+              document.getElementsByTagName('tr')[j].children[i+1].innerHTML = "flower";
+           }
+            else
+            {
+                document.getElementsByTagName('tr')[j].children[i+1].innerHTML = "watch + flower";
+            }
+        }
+    </script>
+    
+</body>
+</html>
