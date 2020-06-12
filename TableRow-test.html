@@ -17,20 +17,22 @@
 <body>
     <script>
         var password = "12345";
-        var answerPass = prompt("What is your Password?", "");
-        if (answerPass != password)
+        var x = false
+
+        if(prompt("What is your Password?", "") != "12345")
         {
-            table.outerHTML = "You are not permitted to see this page";
+            x = true;
+            document.getElementById("tab1").outerHTML = "you are not permited to see this content";
         }
     </script>
 
-    <table>
+    <table id="tab1">
     
         <td name = "LastName">Last Name</td>
             <td>Age</td>
             <td>Employee-Contractor</td>
             <td>Gender</td>
-            <td>Present for Passover</td>
+            <td>Present for Passover</td>6
         </tr>
         <tr>
             <td od="c2" name = "LastName">johnson</td>
@@ -64,6 +66,11 @@
     </table>
 
     <script>
+        if(x == true)
+        {
+            document.getElementById("tab1").outerHTML = "you are not permited to see this content";
+        }
+        
        var c
         var rows = document.querySelectorAll('tr');
         var colLength = document.querySelector('tr').children.length;
